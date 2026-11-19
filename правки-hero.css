@@ -32,9 +32,9 @@ h1, h2, h3, p, li, a, span, b, figcaption, blockquote { -webkit-hyphens: manual 
 .s-widget { gap: 12px; padding: 20px 22px; }
 .s-widget__title { font-size: 1.12rem; }
 .s-widget legend { margin-bottom: 6px; }
-.s-widget .s-chips--col { flex-direction: row; flex-wrap: wrap; gap: 6px; }
+.s-widget .s-chips--col, .s-widget fieldset:first-of-type .s-chips { display: flex; flex-direction: column; flex-wrap: nowrap; gap: 6px; }
 .s-widget .s-chip { min-height: 34px; padding: 5px 11px; font-size: .86rem; border-radius: 8px; }
-.s-widget .s-chip--row { justify-content: center; }
+.s-widget .s-chip--row, .s-widget fieldset:first-of-type .s-chip { justify-content: space-between; width: 100%; }
 .s-widget .s-chip--row b:empty { display: none; }
 .s-widget [data-s-days], .s-widget [data-s-times] { display: grid; gap: 6px; }
 .s-widget [data-s-days] { grid-template-columns: repeat(4, 1fr); }
